@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archivoArtistas>
+    <Artistas>
+        <apellido>Da Vinci</apellido>
+        <cedula>123456789</cedula>
+        <codigoArtista>1001</codigoArtista>
+        <fechaNacimiento>1452-04-15</fechaNacimiento>
+        <nombre>Maria L.</nombre>
+        <obras/>
+        <telefono>7654321</telefono>
+    </Artistas>
+    <Artistas>
+        <apellido>Picasso</apellido>
+        <cedula>234567891</cedula>
+        <codigoArtista>1002</codigoArtista>
+        <fechaNacimiento>1881-10-25</fechaNacimiento>
+        <nombre>Maria P.</nombre>
+        <obras/>
+        <telefono>7654322</telefono>
+    </Artistas>
+    <Artistas>
+        <apellido>Van Gogh</apellido>
+        <cedula>345678912</cedula>
+        <codigoArtista>1003</codigoArtista>
+        <fechaNacimiento>1853-03-30</fechaNacimiento>
+        <nombre>Maria V.</nombre>
+        <obras/>
+        <telefono>7654323</telefono>
+    </Artistas>
+    <Artistas>
+        <apellido>Angel</apellido>
+        <cedula>456789123</cedula>
+        <codigoArtista>1004</codigoArtista>
+        <fechaNacimiento>1475-03-06</fechaNacimiento>
+        <nombre>Maria M.</nombre>
+        <obras/>
+        <telefono>7654324</telefono>
+    </Artistas>
+    <Artistas>
+        <apellido>Dali</apellido>
+        <cedula>567891234</cedula>
+        <codigoArtista>1005</codigoArtista>
+        <fechaNacimiento>1904-05-11</fechaNacimiento>
+        <nombre>Maria Salvador</nombre>
+        <obras/>
+        <telefono>7654325</telefono>
+    </Artistas>
+    <Artistas>
+        <apellido>Botero</apellido>
+        <cedula>678912345</cedula>
+        <codigoArtista>1006</codigoArtista>
+        <fechaNacimiento>1932-04-19</fechaNacimiento>
+        <nombre>Fernando Maria</nombre>
+        <obras/>
+        <telefono>7654326</telefono>
+    </Artistas>
+    <Artistas>
+        <apellido>Sanzio</apellido>
+        <cedula>789123456</cedula>
+        <codigoArtista>1007</codigoArtista>
+        <fechaNacimiento>1483-04-06</fechaNacimiento>
+        <nombre>Rafael Maria</nombre>
+        <obras/>
+        <telefono>7654327</telefono>
+    </Artistas>
+    <Artistas>
+        <apellido>Donatello</apellido>
+        <cedula>891234567</cedula>
+        <codigoArtista>1008</codigoArtista>
+        <fechaNacimiento>1836-01-01</fechaNacimiento>
+        <nombre>Maria Niccolo</nombre>
+        <obras/>
+        <telefono>7654328</telefono>
+    </Artistas>
+    <Artistas>
+        <apellido>Rayo</apellido>
+        <cedula>912345678</cedula>
+        <codigoArtista>1009</codigoArtista>
+        <fechaNacimiento>1928-01-20</fechaNacimiento>
+        <nombre>Maria Omar</nombre>
+        <obras/>
+        <telefono>7654329</telefono>
+    </Artistas>
+    <Artistas>
+        <apellido>Botticelli</apellido>
+        <cedula>113456789</cedula>
+        <codigoArtista>1010</codigoArtista>
+        <fechaNacimiento>1445-03-01</fechaNacimiento>
+        <nombre>Maria Sandro</nombre>
+        <obras/>
+        <telefono>7654320</telefono>
+    </Artistas>
+</archivoArtistas>

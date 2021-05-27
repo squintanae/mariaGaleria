@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archivoClientes>
+    <Clientes>
+        <apellidos>Minio</apellidos>
+        <cedula>1234567</cedula>
+        <codigoCliente>1000</codigoCliente>
+        <direccionEntrega>Carrera Dragon N 20-10</direccionEntrega>
+        <nombre>Malia</nombre>
+        <telefono>301577261</telefono>
+    </Clientes>
+    <Clientes>
+        <apellidos>Quint Lee Yu</apellidos>
+        <cedula>2345671</cedula>
+        <codigoCliente>2000</codigoCliente>
+        <direccionEntrega>Carrera Mono N 20-10</direccionEntrega>
+        <nombre>Malia D.</nombre>
+        <telefono>301577262</telefono>
+    </Clientes>
+    <Clientes>
+        <apellidos>Floliro</apellidos>
+        <cedula>3456712</cedula>
+        <codigoCliente>3000</codigoCliente>
+        <direccionEntrega>Carrera Grulla N 20-10</direccionEntrega>
+        <nombre>Malia S.</nombre>
+        <telefono>301577263</telefono>
+    </Clientes>
+    <Clientes>
+        <apellidos>Chen He</apellidos>
+        <cedula>4567123</cedula>
+        <codigoCliente>4000</codigoCliente>
+        <direccionEntrega>Carrera Tigresa N 20-10</direccionEntrega>
+        <nombre>Malia J.</nombre>
+        <telefono>301577264</telefono>
+    </Clientes>
+    <Clientes>
+        <apellidos>Po</apellidos>
+        <cedula>5671234</cedula>
+        <codigoCliente>5000</codigoCliente>
+        <direccionEntrega>Carrera Panda N 20-10</direccionEntrega>
+        <nombre>Malia A.</nombre>
+        <telefono>301577265</telefono>
+    </Clientes>
+</archivoClientes>

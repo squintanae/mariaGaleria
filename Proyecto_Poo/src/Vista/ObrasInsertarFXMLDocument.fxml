@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="fondoPrincipal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="700.0" style="-fx-background-color: #FED85D#FED85D;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vista.ObrasInsertarFXMLDocumentController">
+   <children>
+      <Button fx:id="botonNuevaObra" layoutX="375.0" layoutY="650.0" mnemonicParsing="false" onAction="#NuevaObra" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #696969;" text="NUEVA OBRA" textFill="WHITE">
+         <font>
+            <Font name="Dubai Regular" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="190.0" layoutY="20.0" prefHeight="52.0" prefWidth="320.0" text="GESTIONAR OBRA">
+         <font>
+            <Font name="Britannic Bold" size="40.0" />
+         </font></Label>
+      <Label layoutX="40.0" layoutY="99.0" text="Código:" />
+      <Label layoutX="261.0" layoutY="98.0" text="Titulo:" />
+      <Label layoutX="40.0" layoutY="142.0" text="Fecha:" />
+      <TextField fx:id="TextFieldGestionarObraCodigo" layoutX="95.0" layoutY="95.0" />
+      <TextField fx:id="TextFieldGestionarObraTitulo" layoutX="310.0" layoutY="95.0" />
+      <DatePicker fx:id="DatePickerGestionarObra" layoutX="81.0" layoutY="137.0" prefHeight="26.0" prefWidth="149.0" />
+      <Label layoutX="475.0" layoutY="142.0" text="Precio:" />
+      <Label layoutX="241.0" layoutY="141.0" text="Dimensiones:" />
+      <TextField fx:id="TextFieldGestionarObraPrecio" layoutX="528.0" layoutY="138.0" />
+      <TextField fx:id="TextFieldGestionarObraDimensiones" layoutX="328.0" layoutY="137.0" prefHeight="26.0" prefWidth="110.0" />
+      <Label layoutX="263.0" layoutY="181.0" text="Tipo:" />
+      <ChoiceBox fx:id="ChoiceBoxGestionarObraTipo" layoutX="302.0" layoutY="181.0" prefWidth="150.0" />
+      <TabPane cache="true" layoutX="21.0" layoutY="228.0" prefHeight="410.0" prefWidth="654.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="GestionarObraCuadro" onSelectionChanged="#iniciarCuadro" text="CUADRO">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="343.0" prefWidth="654.0">
+                     <children>
+                        <TextField fx:id="TextFieldTema" layoutX="178.0" layoutY="55.0" prefHeight="30.0" prefWidth="200.0" />
+                        <Label layoutX="84.0" layoutY="59.0" text="Tema:" />
+                        <Label layoutX="84.0" layoutY="114.0" text="Técnica:" />
+                        <Label layoutX="84.0" layoutY="190.0" text="Clasificación:" />
+                        <TextField fx:id="TextFieldTecnica" layoutX="177.0" layoutY="116.0" prefHeight="30.0" prefWidth="200.0" />
+                        <ChoiceBox fx:id="ChoiceBoxClasificacion" layoutX="177.0" layoutY="186.0" prefHeight="30.0" prefWidth="200.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="GestionarObraEscultura" onSelectionChanged="#iniciarEscultura" text="ESCULTURA">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="23.0" layoutY="131.0" text="Peso:" />
+                        <Label layoutX="308.0" layoutY="131.0" text="Nombre Material:" />
+                        <Label layoutX="60.0" layoutY="43.0" text="Código Material:" />
+                        <Label layoutX="16.0" layoutY="172.0" text="Descripción Material:" />
+                        <TextField fx:id="TextFieldPesoEscultura" layoutX="72.0" layoutY="127.0" prefHeight="26.0" prefWidth="218.0" />
+                        <TextField fx:id="TextFieldMaterialEscultura" layoutX="415.0" layoutY="127.0" prefHeight="26.0" prefWidth="218.0" />
+                        <TextField fx:id="TextFieldCodigoMaterialEscultura" layoutX="165.0" layoutY="47.0" prefHeight="26.0" prefWidth="161.0" />
+                        <TextArea fx:id="TextAreaEscultura" layoutX="16.0" layoutY="209.0" prefHeight="136.0" prefWidth="622.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab fx:id="GestionarObraInstalacion" onSelectionChanged="#iniciarInstalacion" text="INSTALACIÓN">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tablaMateriales" layoutX="27.0" layoutY="91.0" prefHeight="86.0" prefWidth="600.0">
+                          <columns>
+                            <TableColumn fx:id="colNombreMaterial" prefWidth="150.0" text="NOMBRE" />
+                            <TableColumn fx:id="colCodigoMaterial" prefWidth="100.0" text="CÓDIGO" />
+                              <TableColumn fx:id="colDescripcionMaterial" prefWidth="350.0" text="DESCRIPCION" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="botonAgregarMaterial" layoutX="433.0" layoutY="315.0" mnemonicParsing="false" onAction="#agregarMaterial" prefHeight="20.0" prefWidth="200.0" style="-fx-background-color: #696969;" text="AGREGAR MATERIAL" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font></Button>
+                        <Label layoutX="26.0" layoutY="14.0" text="Descripción" />
+                        <TextArea fx:id="TextAreaDescripcionInstalacion" layoutX="106.0" layoutY="11.0" prefHeight="38.0" prefWidth="510.0" />
+                        <Label layoutX="315.0" layoutY="194.0" text="Nombre:" />
+                        <Label layoutX="26.0" layoutY="194.0" text="Código:" />
+                        <Label layoutX="26.0" layoutY="243.0" text="Descripción" />
+                        <TextField fx:id="TextFieldCodigoInstalacion" layoutX="102.0" layoutY="198.0" prefHeight="26.0" prefWidth="178.0" />
+                        <TextField fx:id="TextFieldNombreInstalacion" layoutX="384.0" layoutY="198.0" prefHeight="26.0" prefWidth="223.0" />
+                        <TextArea fx:id="TextAreaDescripcionMaterial" layoutX="102.0" layoutY="243.0" prefHeight="62.0" prefWidth="526.0" />
+                        <Label layoutX="26.0" layoutY="28.0" text="Instalación:" />
+                        <Label layoutX="26.0" layoutY="257.0" text="Material" />
+                        <Label layoutX="240.0" layoutY="66.0" text="TABLA DE MATERIALES">
+                           <font>
+                              <Font name="Britannic Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="GestionarObraNuevoArtista" onSelectionChanged="#iniciarNuevoArtista" text=" ARTISTA">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="50.0" layoutY="169.0" prefHeight="20.0" prefWidth="60.0" text="Codigo:" />
+                        <Label layoutX="50.0" layoutY="249.0" prefHeight="20.0" prefWidth="60.0" text="Apellido" />
+                        <Label layoutX="50.0" layoutY="209.0" prefHeight="20.0" prefWidth="60.0" text="Nombre:" />
+                        <Label layoutX="340.0" layoutY="214.0" prefHeight="20.0" prefWidth="80.0" text="Telefono:" />
+                        <Label layoutX="340.0" layoutY="169.0" prefHeight="20.0" prefWidth="80.0" text="Cedula:" />
+                        <Label layoutX="340.0" layoutY="254.0" prefHeight="20.0" prefWidth="80.0" text="Fecha de" />
+                        <TextField fx:id="TextFieldCodigoArtista" layoutX="120.0" layoutY="169.0" prefHeight="30.0" prefWidth="200.0" />
+                        <TextField fx:id="TextFieldTelefonoArtista" layoutX="427.0" layoutY="214.0" prefHeight="30.0" prefWidth="200.0" />
+                        <TextField fx:id="TextFieldCedulaArtista" layoutX="427.0" layoutY="169.0" prefHeight="30.0" prefWidth="200.0" />
+                        <TextField fx:id="TextFieldApellidoArtista" layoutX="120.0" layoutY="249.0" prefHeight="30.0" prefWidth="200.0" />
+                        <TextField fx:id="TextFieldNombreArtista" layoutX="120.0" layoutY="209.0" prefHeight="30.0" prefWidth="200.0" />
+                        <DatePicker fx:id="DataPickerFechaNacimiento" layoutX="427.0" layoutY="254.0" prefHeight="30.0" prefWidth="200.0" />
+                        <Button fx:id="botonAgregarArtista" layoutX="427.0" layoutY="320.0" mnemonicParsing="false" onAction="#agregarArtista" prefHeight="20.0" prefWidth="200.0" style="-fx-background-color: #696969;" text="AGREGAR" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="340.0" layoutY="269.0" prefHeight="20.0" prefWidth="80.0" text="Nacimiento:" />
+                        <TableView fx:id="tablaArtista" layoutX="27.0" layoutY="23.0" prefHeight="130.0" prefWidth="600.0">
+                          <columns>
+                            <TableColumn fx:id="colNombreArtista" prefWidth="200.0" text="NOMBRE" />
+                            <TableColumn fx:id="colApellidoArtista" prefWidth="200.0" text="APELLIDO" />
+                              <TableColumn fx:id="colCodigoArtista" prefWidth="200.0" text="CODIGO" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Label layoutX="475.0" layoutY="99.0" text="Artista:" />
+      <ChoiceBox fx:id="ChoiceBoxGestionarArtista" layoutX="528.0" layoutY="94.0" prefHeight="26.0" prefWidth="119.0" />
+      <Button fx:id="botonNuevoArtista" layoutX="651.0" layoutY="94.0" mnemonicParsing="false" onAction="#nuevoArtista" prefHeight="26.0" prefWidth="26.0" text="+" />
+      <Button fx:id="botonModificar" layoutX="110.0" layoutY="650.0" mnemonicParsing="false" onAction="#modificarObra" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #696969;" text="MODIFICAR" textFill="WHITE">
+         <font>
+            <Font name="Dubai Regular" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="botonVolver" layoutX="248.0" layoutY="723.0" mnemonicParsing="false" onAction="#volver" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #696969;" text="VOLVER" textFill="WHITE">
+         <font>
+            <Font name="Dubai Regular" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
